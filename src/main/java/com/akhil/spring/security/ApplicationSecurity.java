@@ -10,13 +10,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
 
+	@Autowired
+	public void initialize(AuthenticationManagerBuilder builder, DataSource dataSource) throws Exception {
+		builder.jdbcAuthentication().dataSource(dataSource).withUser("dave").password("secret").roles("USER");
 
-  @Autowired
-  public void initialize(AuthenticationManagerBuilder builder, DataSource dataSource) throws Exception {
-    builder.jdbcAuthentication().dataSource(dataSource).withUser("dave")
-      .password("secret").roles("USER");
-    
-  }
+	}
 
 }
-
