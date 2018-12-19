@@ -1,11 +1,11 @@
-package com.akhil.SpringLearning.rest;
+package com.akhil.springlearning.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/rest/hello")
+@RequestMapping(path="/rest/hello")
 public class HelloController
 {
 
