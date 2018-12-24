@@ -2,23 +2,32 @@ package com.akhil.springlearning.entity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="emp")
 public class Employee
 {
 	@Id
+	@Column(name="empno")
 	private int employeeId;
 	
+	@Column(name="ename")
 	private String employeeName;
 	
+	@Column(name="job")
 	private String job;
 	
+	@Column(name="hiredate")
 	private Date hiredDate;
 	
+	@Column(name="sal")
 	private int salary;
 	
+	@Column(name="deptno")
 	private int deptNo;
 	
 	protected Employee()
