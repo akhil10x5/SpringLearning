@@ -1,0 +1,14 @@
+version: "3.2"
+
+services:
+  database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: interOP@123
+      MSSQL_DB: employee
+    ports:
+      - 54333:54333
+ networks:
+  mynetwork:
+    driver: bridge

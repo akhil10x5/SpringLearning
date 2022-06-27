@@ -49,8 +49,8 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
-		<!-- JPA DEPENDENCY  -->
+
+		<!-- JPA DEPENDENCY -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -58,10 +58,13 @@
 		</dependency>
 
 		<!-- MYSQL CONNECTOR -->
+		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
+			</dependency> -->
+
 		<dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+		</dependency>
 
 	</dependencies>
 
